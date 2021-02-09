@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "config:base",
+    "default:preserveSemverRanges",
+    ":automergeMinor"
+  ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "depTypeList": [
+        "devDependencies"
+      ]
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "before 11am on monday"
+  },
+  "ignoreDeps": []
+}
